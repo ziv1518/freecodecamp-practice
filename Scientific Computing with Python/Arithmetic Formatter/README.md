@@ -4,23 +4,6 @@ This is the boilerplate for the Arithmetic Formatter project. Instructions for b
 
 The function will return the correct conversion if the supplied problems are properly formatted, otherwise, it will return a string that describes an error that is meaningful to the user.
 
-Example input 1:
-arithmetic_arranger(["32 + 698", "3801 - 2", "45 + 43", "123 + 49"])
-
-Example output 1:
-   32      3801      45      123
-+ 698    -    2    + 43    +  49
------    ------    ----    -----
-
-Example input 2:
-arithmetic_arranger(["32 + 698", "3801 - 2", "45 + 43", "123 + 49"],True)
-
-Example output 2:
-   32      3801      45      123
-+ 698    -    2    + 43    +  49
------    ------    ----    -----
-  730      3799      88      172
-
 Situations that will return an error:
 - If there are too many problems supplied to the function. The limit is five, anything more will return: Error: Too many problems.
 - The appropriate operators the function will accept are addition and subtraction. Multiplication and division will return an error. Other operators not mentioned in this bullet point will not need to be tested. The error returned will be: Error: Operator must be '+' or '-'.
